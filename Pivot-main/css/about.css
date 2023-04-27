@@ -1,0 +1,370 @@
+/* Desktop Design
+#################
+START!!!!!!!!!!!!
+#################
+*/
+
+@import url("https://fonts.cdnfonts.com/css/aventa-personal-use-only");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* colors */
+:root {
+  --white: #ffffff;
+  --orange: #fe9e00;
+  --light_orange: #fff5e7;
+  --black: #000340;
+}
+
+body {
+  font-family: "Aventa Personal Use Only", sans-serif;
+}
+/* navbar section */
+
+header {
+  background: url(../Images/about_bg1.png) no-repeat center;
+  background-size: cover;
+  height: 300px;
+}
+
+.navbar {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+
+.navbar .nav_links {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav_link {
+  cursor: pointer;
+  font-size: 16px;
+}
+.nav_link a {
+  color: var(--white);
+}
+
+.nav_link a:hover {
+  color: var(--orange);
+  transition: 0.5s ease-in;
+}
+
+.nav_links button {
+  background-color: var(--orange);
+  color: var(--white);
+  border: none;
+  padding: 16px 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav_links button:hover {
+  background-color: var(--white);
+  color: var(--orange);
+  transition: 1s ease-in-out;
+}
+
+/* Navcard */
+.navcard {
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 90%;
+  height: 100%;
+  background-color: var(--black);
+  z-index: 999;
+  transition: transform 0.3s ease-in-out;
+  display: none;
+}
+
+.navcard_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:flex-start;
+  height: 100%;
+  margin: 0;
+  padding: 30px;
+  list-style: none;
+}
+
+.navcard_link {
+  margin-bottom: 2rem;
+}
+
+.navcard_link a {
+  color: var(--light_orange);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navcard_link a:hover {
+  padding-bottom: 10px;
+  border-bottom: 5px solid var(--orange);
+}
+.nav_toggle{
+  display: none;
+}
+
+.active{
+  display: flex;
+}
+
+/* who_we_are section */
+
+.who_we_are {
+  display: flex;
+  padding: 50px;
+  width: 100%;
+}
+
+.who_we_are_image {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.who_we_are_image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.who_we_are_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+#flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Core Value */
+
+.core_value {
+  text-align: center;
+}
+
+.quote {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.quote > p {
+  width: 30%;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+.card {
+  width: 339px;
+  height: 291px;
+  box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+}
+
+.card img {
+  width: 72px;
+  height: 72px;
+}
+
+/* Services Section */
+
+.services .core > h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 16px;
+  width: 140px;
+  height: 56px;
+  background: var(--light_orange);
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 400px;
+  height: 500px;
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 8px;
+  gap: 15px;
+}
+
+.course h2 {
+  text-align: center;
+  color: var(--orange);
+}
+
+.course ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: circle;
+}
+
+/* Footer Section */
+
+footer{
+  height: 500px;
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: var(--white);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+footer a:hover {
+  color: var(--orange);
+  transition: .5s ease-in-out;
+}
+
+.footer_links {
+  display: flex;
+  gap: 40px;
+}
+
+.footer_links .foot_link {
+  margin: 30px;
+}
+
+#big{
+  font-size: 1rem;
+}
+
+/* Desktop Design
+###############
+END!!!!!!!!!!!!
+###############
+*/
+
+/* Mobile Responsive
+##################
+START!!!!!!!!!!!!!
+##################
+*/
+
+@media (max-width:768px){
+
+  /* Navbar section */
+  .nav_link{
+    display: none;
+  }
+
+  .nav_links {
+    display: none;
+  }
+  
+  .nav_toggle {
+    display: block;
+  }  
+
+  /* who_we_are section */
+
+  .who_we_are {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .who_we_are_image{
+     width: 100%;
+  }
+
+  .who_we_are_image img {
+    object-fit: contain;
+  }
+
+  .who_we_are_content {
+    width: 100%;
+  }
+  
+  /* Core Value */ 
+  .quote > p{
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Services Section */
+  .courses{
+    padding: 20px;
+  }
+
+  /* Footer Section */
+
+  footer{
+    height: 100%;
+  }
+
+  .footer_links{
+     flex-direction: column;
+     gap: 10px;
+  }
+}
+
+
+/* Mobile Responsive
+#################
+DONE!!!!!!!!!!!!!
+#################
+*/
+
+
